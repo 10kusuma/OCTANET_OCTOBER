@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="utils1.css">
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+background-image: url("https://i.pinimg.com/564x/77/f7/b3/77f7b3eb3cb92ff1a9f8ae7e9b94dec0.jpg");
+ background-color: #cccccc;
+      position: relative;
+      height: 360vh;
+background-size:cover;
+height:100%;
+width:100%;
+    }
+#main{
+height:100%;
+width:100%;
+
+display:flex;
+}
+#part1{
+height:55vh;
+width:40vw;
+position:absolute;
+background-color:red;
+border-radius:10px;
+}
+.navbar
+{
+display:flex;
+height:67px;
+}
+.navbar>li{
+list-style:none;
+margin:0 12px;
+}
+.topleft{
+width:100%;
+background-color:hsl(346deg 17% 70%);
+height:100%;
+}
+.center{
+width:20%;
+background-color:blue;
+}
+.topright{
+width:50%;
+height:400px;
+}
+.section1{
+height:70vh;
+}
+.section2{
+height:260vh;
+}
+.section3{
+height:70vh;
+}
+    body {
+     background-image: url("https://i.pinimg.com/564x/77/f7/b3/77f7b3eb3cb92ff1a9f8ae7e9b94dec0.jpg");   
+ background-color: #cccccc;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: solid black;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 90%;
+      height: 90%;
+      background-size:cover;
+    }
+  </style>
+</head>
+<body  class="overflow-x-hidden">
+<div class="bigdiv">
+<div id="main">
+<div class="container mx-auto ">
+<header>
+<nav class="flex justify-between">
+<div class="logo font-bold flex items-center text "><p class="k" style="border:10px" >HUNGRY</p></div>
+<UL class="navbar flex items-center">
+<li>HOME</li>
+<li>ABOUT</li>
+<li>SERVICES</li>
+<li>CONTACT US</li>
+<li><button class="btn">BOOK A TABLE</button></li>
+</UL>
+</nav>
+</header>
+<main class="min-h-screen ">
+<SECTION class="section1">
+<div class="body3">
+<div class="card3">
+<div class=" topleft flex flex-col justify-center px1">
+<h1 class="my-1 text-center">FULFILL YOUR HUNGER WITH HUNGRY</h1>
+<p class="text-center">A SOUTH INDIAN CUISINE RESTAURANT</p>
+<p class="text-center">If you are looking for a good restaurant to satisfy your taste buds,you might want to check out hungry.</p>
+</div></div>
+<div class="card3"
+<div class="topright ">
+<div id="part1">
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Poricha Kuzhambu.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Masala Vada _ Chana Dal Vada - Swasthi's Recipes.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Lemon Rice.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Sambar Recipe.png" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Chettinad Style Appam Recipe Without Yeast-South Indian Breakfast Recipes.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Kara Chutney Recipe For Dosa Idli _ How To Make Kara Chutney - My Dainty Kitchen.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Tomato Rice (Thakkali Sadam).jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\udupi chitranna recipe _ kayi sasive chitranna _ masala chitranna recipe.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+      <div class="swiper-slide"><img src="C:\Users\yarramsetti kusuma\Downloads\Cheese dosa.jfif" width="100" height="200" alt="cheese dosa"></img></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+},
+    });
+  </script>
+</div>
+</div>
+</div>
+</SECTION>
+<SECTION class="section2">
+<h1 class="text-center my-1 k">OUR SPECALITIES</h1>
+<div class="body1">
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\10 Best Indian Thali Meals For Festivals.jfif"></img>
+</div>
+<div class="bottom">SOUTH INDIAN THALI offers an authentic gastronomic journey through the rice flavors of southern india.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Prawns Biryani.jfif"></img>
+</div>
+<div class="bottom">A mouthwatering dish of succulent prawns and fragrant basmati rice cooked with aromatic spices and herbs.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Chipotle Honey Chicken Skewers.jfif"></img>
+</div>
+<div class="bottom">Grilled to perfection, these chicken skewers are a tasty and easy way to enjoy tender and juicy chicken.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Mushroom Biryani.jfif"></img>
+</div>
+<div class="bottom">MUSHROOM BIRYANI is a Hyderbadi delicacy that will tantalize your taste buds and make you carve for more.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Kuska recipe - plain biryani rice.jfif"></img>
+</div>
+<div class="bottom">KUSKA PLAIN BIRYANI RICE is a simple and aromatic dish of basmati rice cooked with ghee,spices,herbs,and yogurt.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Aloo dum biryani _ Potato biryani - Swasthi's Recipes.jfif"></img>
+</div>
+<div class="bottom">ALOO BIRYANI is a delicious and aromatic dish of rice and potatoes cooked with spices,herbs, and yogurt.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Kolhapuri Chicken Biryani.jfif"></img>
+</div>
+<div class="bottom">A spicy and flavorful dish of chicken and basmati rice cooked with a special blended of spices.</div>
+</div>
+<div class="card">
+<div class="top img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\Chicken 65 Recipe - Swasthi's Recipes.jfif"></img>
+</div>
+<div class="bottom">A fiery and flavorful dish of crispy fried chicken tossed with spicy red sauce,garlic,green chillies and curry leaves.</div>
+</div>
+</div>
+</SECTION>
+<SECTION class="section3">
+<h1 class="text-center my-1 k">REVIEWS</h1>
+<div class="body2">
+<div class="card1">
+<div class="top1 img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\review2.png"></img>
+</div>
+</div>
+<div class="card1">
+<div class="top1 img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\review3.jpeg"></img>
+</div>
+</div>
+<div class="card1">
+<div class="top1 img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\review1.png"></img>
+</div>
+</div>
+<div class="card1">
+<div class="top1 img">
+<img src="C:\Users\yarramsetti kusuma\Downloads\review5.jpeg"></img>
+</div>
+</div>
+</SECTION>
+</main>
+<footer>
+<div class="footer">
+<div class="foot" id="email">
+<p class="p">Email.id:</p>
+<a href="" class="a">hungry10072003@gmail.com</a>
+</div> 
+<div class="foot">
+<p class="p">contact us:</p>
+<p class="p">+91 9846234466</p>
+</div> 
+<div class="foot q">
+<p class="p">Address:</p>
+<p class="p">Hazratbal,Srinagar,J&K,INDIA</p>
+</div> 
+</div>
+</footer>
+</div>
+</div>
+</div>
+</body>
+
+</html>
